@@ -1,0 +1,36 @@
+#article_container {
+    border: 1px none black; /* SCAFFOLDING DEACTIVATED */
+    padding: 0.25em 5% 1em 5%;
+    text-align: justify;
+    background-color: rgb(245,245,245);
+}
+
+#article_container h3 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+}
+
+#article_container p {
+
+}
+
+#article_container caption {
+    padding: 1em 0 1em 1em;
+}
+
+#article_container ol, ul {
+    padding: 1em 0 1em 1em;
+}
+
+
+#article_container picture {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#article_container img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}

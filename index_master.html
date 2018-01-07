@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Travel Website with Front-End Form Implementation -->
+    <!-- By Ang Khee Hwa Randi (p7302155) -->
+    <!-- Email: kang005@e.ntu.edu.sg -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sets initial scaling when browser loads page -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Website - Master</title>
+    <link rel="stylesheet" href="css/styles_main_core.css"> <!-- main style sheet controlling layout-->
+    <link rel="stylesheet" href="css/styles_main_12col.css"> <!-- main style sheet controlling layout-->    
+    <link rel="stylesheet" href="css/styles_main_font.css"> <!-- font control -->
+    <link rel="stylesheet" href="css/styles_main_nav.css"> <!-- menu nav control -->
+    <link rel="stylesheet" href="css/styles_main_searchbar.css"> <!-- menu search bar control -->
+    <link rel="stylesheet" href="css/styles_add-on_tripfinderform.css"> <!-- trip finder form control -->
+    <link rel="stylesheet" href="css/styles_add-on_flex_articles.css"> <!-- flex articles control -->
+    <link rel="stylesheet" href="css/styles_add-on_contactus.css"> <!-- contact us control -->
+    <link rel="stylesheet" href="css/styles_add-on_article.css"> <!-- article control -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- bootstrap carousel plug-in (https://www.w3schools.com/bootstrap/bootstrap_carousel.asp); note: that this stylesheet also negatively affects the nav control -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- bootstrap carousel plug-in (https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap carousel plug-in (https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)-->
+</head>
+<body>
+    <div class="container" class="row">
+        <header class="col-12" id="header_settings">
+            <picture id="logo" class="col-4">
+                <source srcset="resources/logo.gif" media="(max-width:220px)">
+                <source srcset="resources/logo.gif" media="(min-width:320px)">
+                <source srcset="resources/logo.gif" media="(min-width:420px)">
+                <source srcset="resources/logo.gif" media="(min-width:540px)">
+                <img src="resources/logo.gif" alt="Planet Travel Pte Ltd"> 
+            </picture>
+            <nav class="col-5" class="nav0">
+                <div class="navbar0">
+                    <div class="nav-btn0">
+                        <label for="nav-check0"> <!-- hamburger nav menu -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </label>
+                    </div>
+                    <input type="checkbox" id="nav-check0">
+                    <div class="nav-links0">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="tours_main.html">Tours</a>
+                        <a href="blog_main.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://www.facebook.com/" target="_blank"> <!-- Link to facebook account; placeholder used -->
+                            <picture>
+                                <source srcset="resources/fb/custom/fb-logo-2016-30px.png" media="(min-width:601px)">
+                                <source srcset="resources/fb/custom/fb-logo-2016-45px.png" media="(max-width:600px)">
+                                <img src="resources/fb/custom/fb-logo-2016-30px.png" alt="facebook">
+                            </picture>
+                        </a>
+                        <a href="https://www.instagram.com/angstyrandi/" target="_blank"> <!-- Link to instagram account; placeholder used -->
+                            <picture>
+                                <source srcset="resources/insta/custom/insta-logo-2016-30bpx.png" media="(min-width:601px)">
+                                <source srcset="resources/insta/custom/insta-logo-2016-45bpx.png" media="(max-width:600px)">
+                                <img src="resources/insta/custom/insta-logo-2016-30bpx.png" alt="instagram">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+            <form action="serverURLplaceholder" class="col-3" id="search_form">
+                <input type="search" name="search" placeholder="Input keyword(s)" class="col-8" id="search_bar">
+                <input type="submit" value="Search" class="col-4" id="search_button">
+            </form>
+            
+            
+        
+        
+        </header>
+
+        <div id="page_title" class="col-12">
+            <h1>Index Master</h1>
+        </div>
+        
+        <div class="col-12" class="content_settings">
+            <div class="col-12"> <!-- container to create full size carousel layout -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- boostrap carousel image -->
+                    <!-- Indicators for bootstap carousel image -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides for bootstap carousel image -->
+                    <div class="carousel-inner">
+                        
+                        <div class="item active"> <!-- container for first image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-01-l.jpg" alt="Scarecrow" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Scarecrow</h3>
+                                <p>Happy Halloween!</p>
+                            </div>
+                        </div>
+                
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-02-l.jpg" alt="Super Trees" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Super Trees</h3>
+                                <p>Super Trees Lightshow at the Gardens By The Bay</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-03-l.jpg" alt="Annapurna" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Annapurna</h3>
+                                <p>Panorama from Poon Hill</p>
+                            </div>
+                        </div>
+
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-04-l.jpg" alt="Shitiping" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Shitiping</h3>
+                                <p>Wild coasts of Hualien</p>
+                            </div>
+                        </div>
+
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-05-l.jpg" alt="Alishan" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Alishan</h3>
+                                <p>Forests of Alishan</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls for boostrap carousel image -->
+                    <!-- Note if there is more than 1 carousel image, this control only works for the first carousel -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>   
+        </div>
+   
+        <div id="section_title_01" class="col-12">
+            <h2>Featured Items</h2>
+        </div>
+
+        <div class="col-12" class="content_settings">
+            <div class="col-8"> <!-- container to create responsive carousel layout -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- boostrap carousel image -->
+                    <!-- Indicators for bootstap carousel image -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides for bootstap carousel image -->
+                    <div class="carousel-inner">
+                        
+                        <div class="item active"> <!-- container for first image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-01-l.jpg" alt="Scarecrow" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Scarecrow</h3>
+                                <p>Happy Halloween!</p>
+                            </div>
+                        </div>
+                
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-02-l.jpg" alt="Super Trees" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Super Trees</h3>
+                                <p>Super Trees Lightshow at the Gardens By The Bay</p>
+                            </div>
+                        </div>
+                        
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-03-l.jpg" alt="Annapurna" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Annapurna</h3>
+                                <p>Panorama from Poon Hill</p>
+                            </div>
+                        </div>
+
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-04-l.jpg" alt="Shitiping" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Shitiping</h3>
+                                <p>Wild coasts of Hualien</p>
+                            </div>
+                        </div>
+
+                        <div class="item"> <!-- container for each image -->
+                            <a href="subpages/tour_post_001.html" target="_blank">
+                                <img src="resources/images/pic-05-l.jpg" alt="Alishan" style="max-width:100%;">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Alishan</h3>
+                                <p>Forests of Alishan</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls for boostrap carousel image -->
+                    <!-- Note if there is more than 1 carousel image, this control only works for the first carousel -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+            <form class="col-4"> <!-- Trip Finder Dropdown Menu System -->
+                <fieldset class="trip_finder">
+                    <h2>Trip Finder</h2>
+                    <div class="flex_container">
+                        <select id="TripType_Dropdown" name="TripType_Dropdown">
+                            <option value="00">Select Trip Type</option>
+                            <option value="01">Land Tour</option>
+                            <option value="02">Cruise</option>
+                        </select>
+                        <select id="Country_Dropdown" name="Country_Dropdown">
+                            <option value="00">Select Country</option>
+                            <option value="01">Singapore</option>
+                            <option value="02">Nepal</option>
+                            <option value="03">Taiwan</option>
+                        </select>
+                        <select id="City_Dropdown" name="City_Dropdown">
+                            <option value="00">Select City</option>
+                            <option value="01">Singapore</option>
+                            <option value="02">Kathmandu</option>
+                            <option value="03">Taichung</option>
+                            <option value="04">Hualien</option>
+                        </select>
+                        <select id="Theme_Dropdown" name="Theme_Dropdown">
+                            <option value="00">Select Theme</option>
+                            <option value="01">Family</option>
+                            <option value="02">Adventure</option>
+                            <option value="03">Sight Seeing</option>
+                        </select>
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>        
+
+        <div id="section_title_02" class="col-12">
+            <h2>Featured Items</h2>
+        </div>
+
+        <div class="col-12" class="content_settings">
+            <ul class="flex cards"> <!-- container to create flex articles system -->
+                <li>
+                    <picture>
+                        <source srcset="resources/images/pic-01-s.jpg" media="(max-width:280px)">
+                        <source srcset="resources/images/pic-01-m.jpg" media="(min-width:281px)">
+                        <img src="resources/images/pic-01-m.jpg" alt="Scarecrow"> 
+                    </picture>
+                    <h3><a href="subpages/tour_post_001.html" target="_blank">Article 1</a></h3>
+                    <p><a href="subpages/tour_post_001.html" target="_blank">SGD 2,000<br>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </a></p>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="resources/images/pic-02-s.jpg" media="(max-width:280px)">
+                        <source srcset="resources/images/pic-02-m.jpg" media="(min-width:281px)">
+                        <img src="resources/images/pic-02-m.jpg" alt="Gardens By The Bay"> 
+                    </picture>
+                    <h3><a href="subpages/tour_post_001.html" target="_blank">Article 2</a></h3>
+                    <p><a href="subpages/tour_post_001.html" target="_blank">SGD 2,000<br>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </a></p>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="resources/images/pic-03-s.jpg" media="(max-width:280px)">
+                        <source srcset="resources/images/pic-03-m.jpg" media="(min-width:281px)">
+                        <img src="resources/images/pic-03-m.jpg" alt="Annapurna"> 
+                    </picture>
+                    <h3><a href="subpages/tour_post_001.html" target="_blank">Article 3</a></h3>
+                    <p><a href="subpages/tour_post_001.html" target="_blank">SGD 2,000<br>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </a></p>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="resources/images/pic-04-s.jpg" media="(max-width:280px)">
+                        <source srcset="resources/images/pic-04-m.jpg" media="(min-width:281px)">
+                        <img src="resources/images/pic-04-m.jpg" alt="Shitiping"> 
+                    </picture>
+                    <h3><a href="subpages/tour_post_001.html" target="_blank">Article 4</a></h3>
+                    <p><a href="subpages/tour_post_001.html" target="_blank">SGD 2,000<br>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </a></p>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="resources/images/pic-05-s.jpg" media="(max-width:280px)">
+                        <source srcset="resources/images/pic-05-m.jpg" media="(min-width:281px)">
+                        <img src="resources/images/pic-05-m.jpg" alt="Alishan"> 
+                    </picture>
+                    <h3><a href="subpages/tour_post_001.html" target="_blank">Article 5</a></h3>
+                    <p><a href="subpages/tour_post_001.html" target="_blank">SGD 2,000<br>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </a></p>
+                </li>        
+            </ul>   
+        </div>
+        
+        <div id="section_title_03" class="col-12">
+            <h2>Featured Items</h2>
+        </div>
+
+        <div class="col-12" class="content_settings">
+            <div class="col-4" id="contact_us"> <!-- contact us contact info control-->
+                <h3>Head Office</h3>
+                <p>Telephone Number: +65 1234 0001</p>
+                <p>Address: #123 #123-101 123 XYZ Avenue</p>
+                <p>Postal Code: Singapore 123456</p>
+                <h3>General Enquiries</h3>
+                <p>Telephone Number: +65 1234 0002</p>
+                <p>24hr Hotline: +65 1234 0003</p>
+                <p>Address: #123 #123-101 123 XYZ Avenue</p>
+                <p>Postal Code: Singapore 123456</p>
+
+            </div>
+
+            <form class="col-8" style="background-color: lightslategray"> <!-- contact us form control -->
+                <div class="form_container">
+                    <h3>Contact Us</h3>
+                    <fieldset class="Contact_us-Trip_booking">
+                        <label for "title">Title / Trip</label>
+                        <input type="text" name="title" id="titleInput">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="nameInput">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="emailInput">
+                        <label for="contact">Contact No</label>
+                        <input type="number" name="contact" id="nameInput">
+                        <label for="travellerNum">No. of Travellers</label>
+                        <input type="number" name="travellerNum" id="travellerNumInput">
+                        <label for="mail_content">Content</label>
+                        <textarea name="mail_content" id="contentInput" rows="5" cols="30"></textarea>
+                        <input type="submit" class="send_mail" value="Send">
+                    </fieldset>
+                    <p><a href="https://www.facebook.com/" target="_blank">Privacy Info</a> | <a href="https://www.facebook.com/" target="_blank">Terms and Conditions</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="section_title_04" class="col-12">
+            <h2>Featured Items</h2>
+        </div>
+
+        <div class="col-12" class="content_settings">
+            <article id="article_container"> <!-- Article Section -->
+                <h3>Overview</h3>
+                <p>
+                    <span style="float: left">Date: 1 Jan 2018</span><span style="float: right"><a href="https://www.facebook.com/" target="_blank">Download Itinerary</a></span>
+                    <br>
+                </p>
+                <p>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae. Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.  Vestibulum non nibh risus, a scelerisque purus. Ut vel arcu ac tortor adipiscing hendrerit vel sed massa. Fusce sem libero, lacinia vulputate interdum non, porttitor non quam. Aliquam sed felis ligula. Duis non nulla magna. 
+                </p>
+                <p>
+                    <br>
+                    <picture>
+                        <source srcset="resources/images/pic-01-s.jpg" media="(max-width:280px)">
+                        <source srcset="resources/images/pic-01-m.jpg" media="(max-width:650px)">
+                        <source srcset="resources/images/pic-01-l.jpg" media="(min-width:651px)">
+                        <img src="resources/images/pic-01-m.jpg" alt="Scarecrow"> 
+                    </picture>
+                </p>
+                <p>
+                    <caption>Caption: Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</caption>
+                    <br>
+                </p>           
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus. Duis ac dictum nibh. Etiam id massa magna. Morbi molestie posuere posuere. 
+                </p>
+                <ol>
+                    <li>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</li>
+                    <li>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</li>
+                    <li>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</li>
+                </ol>
+                
+                <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Vestibulum et risus at mi ultricies sagittis quis nec ligula. Suspendisse dignissim dignissim luctus. Duis ac dictum nibh. Etiam id massa magna. Morbi molestie posuere posuere. 
+                </p>
+
+                <ul>
+                        <li>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</li>
+                        <li>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</li>
+                        <li>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae.</li>
+                </ul> 
+
+                <p>Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus. Morbi lorem ante, malesuada in mollis nec, auctor nec massa. Aenean tempus dui eget felis blandit at fringilla urna ultrices. Suspendisse feugiat, ante et viverra lacinia, lectus sem lobortis dui, ultricies consectetur leo mauris at tortor. Nunc et tortor sit amet orci consequat semper. Nulla non fringilla diam. </p>
+                </p>
+            </article>
+        </div>
+
+        <footer class="col-12" id="footer_settings">
+            <p>All Rights Reserve 2017. Travel Planet Pte Ltd.</p>
+        </footer>
+    </div>
+</body>
+</html>

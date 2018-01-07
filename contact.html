@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Travel Website with Front-End Form Implementation -->
+    <!-- By Ang Khee Hwa Randi (p7302155) -->
+    <!-- Email: kang005@e.ntu.edu.sg -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sets initial scaling when browser loads page -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Website - Contact</title>
+    <link rel="stylesheet" href="css/styles_main_core.css"> <!-- main style sheet controlling layout-->
+    <link rel="stylesheet" href="css/styles_main_12col.css"> <!-- main style sheet controlling layout-->    
+    <link rel="stylesheet" href="css/styles_main_font.css"> <!-- font control -->
+    <link rel="stylesheet" href="css/styles_main_nav.css"> <!-- menu nav control -->
+    <link rel="stylesheet" href="css/styles_main_searchbar.css"> <!-- menu search bar control -->
+    <link rel="stylesheet" href="css/styles_add-on_tripfinderform.css"> <!-- trip finder form control -->
+    <link rel="stylesheet" href="css/styles_add-on_flex_articles.css"> <!-- flex articles control -->
+    <link rel="stylesheet" href="css/styles_add-on_contactus.css"> <!-- contact us control -->
+    <link rel="stylesheet" href="css/styles_add-on_article.css"> <!-- article control -->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- bootstrap carousel plug-in (https://www.w3schools.com/bootstrap/bootstrap_carousel.asp); note: that this stylesheet also negatively affects the nav control -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- bootstrap carousel plug-in (https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap carousel plug-in (https://www.w3schools.com/bootstrap/bootstrap_carousel.asp)-->
+</head>
+<body>
+    <div class="container" class="row">
+        <header class="col-12" id="header_settings">
+            <picture id="logo" class="col-4">
+                <source srcset="resources/logo.gif" media="(max-width:220px)">
+                <source srcset="resources/logo.gif" media="(min-width:320px)">
+                <source srcset="resources/logo.gif" media="(min-width:420px)">
+                <source srcset="resources/logo.gif" media="(min-width:540px)">
+                <img src="resources/logo.gif" alt="Planet Travel Pte Ltd"> 
+            </picture>
+            <nav class="col-5" class="nav0">
+                <div class="navbar0">
+                    <div class="nav-btn0">
+                        <label for="nav-check0"> <!-- hamburger nav menu -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </label>
+                    </div>
+                    <input type="checkbox" id="nav-check0">
+                    <div class="nav-links0">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="tours_main.html">Tours</a>
+                        <a href="blog_main.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="https://www.facebook.com/" target="_blank"> <!-- Link to facebook account; placeholder used -->
+                            <picture>
+                                <source srcset="resources/fb/custom/fb-logo-2016-30px.png" media="(min-width:601px)">
+                                <source srcset="resources/fb/custom/fb-logo-2016-45px.png" media="(max-width:600px)">
+                                <img src="resources/fb/custom/fb-logo-2016-30px.png" alt="facebook">
+                            </picture>
+                        </a>
+                        <a href="https://www.instagram.com/angstyrandi/" target="_blank"> <!-- Link to instagram account; placeholder used -->
+                            <picture>
+                                <source srcset="resources/insta/custom/insta-logo-2016-30bpx.png" media="(min-width:601px)">
+                                <source srcset="resources/insta/custom/insta-logo-2016-45bpx.png" media="(max-width:600px)">
+                                <img src="resources/insta/custom/insta-logo-2016-30bpx.png" alt="instagram">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+            <form action="serverURLplaceholder" class="col-3" id="search_form">
+                <input type="search" name="search" placeholder="Input keyword(s)" class="col-8" id="search_bar">
+                <input type="submit" value="Search" class="col-4" id="search_button">
+            </form>
+            
+            
+        
+        
+        </header>
+
+        <div id="page_title" class="col-12">
+            <h1>Contact</h1>
+        </div>
+        
+        <div class="col-12" class="content_settings">
+            <div class="col-4" id="contact_us"> <!-- contact us contact info control-->
+                <h3>Head Office</h3>
+                <p>Telephone Number: +65 1234 0001</p>
+                <p>Address: #123 #123-101 123 XYZ Avenue</p>
+                <p>Postal Code: Singapore 123456</p>
+                <h3>General Enquiries</h3>
+                <p>Telephone Number: +65 1234 0002</p>
+                <p>24hr Hotline: +65 1234 0003</p>
+                <p>Address: #123 #123-101 123 XYZ Avenue</p>
+                <p>Postal Code: Singapore 123456</p>
+
+            </div>
+
+            <form class="col-8" style="background-color: lightslategray"> <!-- contact us form control -->
+                <div class="form_container">
+                    <h3>Contact Us</h3>
+                    <fieldset class="Contact_us-Trip_booking">
+                        <label for "title">Title / Trip</label>
+                        <input type="text" name="title" id="titleInput">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="nameInput">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="emailInput">
+                        <label for="contact">Contact No</label>
+                        <input type="number" name="contact" id="nameInput">
+                        <label for="travellerNum">No. of Travellers</label>
+                        <input type="number" name="travellerNum" id="travellerNumInput">
+                        <label for="mail_content">Content</label>
+                        <textarea name="mail_content" id="contentInput" rows="5" cols="30"></textarea>
+                        <input type="submit" class="send_mail" value="Send">
+                    </fieldset>
+                    <p><a href="https://www.facebook.com/" target="_blank">Privacy Info</a> | <a href="https://www.facebook.com/" target="_blank">Terms and Conditions</a></p>
+                </div>
+            </form>
+        </div>
+
+        <footer class="col-12" id="footer_settings">
+            <p>All Rights Reserve 2017. Travel Planet Pte Ltd.</p>
+        </footer>
+    </div>
+</body>
+</html>

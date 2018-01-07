@@ -1,0 +1,92 @@
+/* Contact Us and Trip Booking Form */
+
+#contact_us {
+    padding: 0.25em 5% 1em 5%;
+    border: 1px none black; /* SCAFFOLDING DEACTIVATED */
+    background-color: #f3b562;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact_us {
+        margin-bottom: 1em;
+    }
+}
+
+#contact_us > h3 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+}
+
+
+/* Form Control Section */
+
+
+
+
+.form_container h3 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+    padding: 0em 5% 0.25em 5%;
+    color: rgb(240,240,240);
+}
+
+.form_container p {
+    color: rgb(240,240,240);
+    padding: 0.25em 5% 1em 5%;
+}
+
+.form_container label {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 0.25em 5% 0.25em 5%;
+    color: rgb(240,240,240);
+}
+
+.Contact_us-Trip_booking {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titleInput, #nameInput, #emailInput, #nameInput, #travellerNumInput {
+    flex: 1;
+    min-width: 90%; 
+    min-height: auto;
+    border: solid 1px black;
+    margin: 0.5em 5% 0.5em 5%;
+    padding: 0.5em;
+}
+
+#contentInput {
+    flex: 1;
+    min-width: 90%; 
+    min-height: 7em;
+    border: solid 1px black;
+    margin: 0.5em 5% 0.5em 5%;
+    padding: 0.5em;
+    
+}
+
+.Contact_us-Trip_booking > input[type="submit"] {
+    min-width: 100px;
+    min-height: 0;
+    padding: 0.5em;
+    margin: 2em 5% 2em 5%;
+    border: solid 1px black;
+    background-color: lightgray;
+}
+
+.form_container a:link {
+    color: rgb(240,240,240);
+    text-decoration: none;
+}
+
+.form_container a:visited {
+    color: rgb(240,240,240);
+    text-decoration: none;
+}
+
+.form_container a:hover {
+    color: black;
+    text-decoration: none;
+}

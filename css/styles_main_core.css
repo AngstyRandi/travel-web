@@ -1,0 +1,266 @@
+/* PRIMARY STYLE SHEET */
+
+
+/* RESET STYLES */
+
+html, body {
+    font-size: 1em;
+    height: 100%;
+    margin: 0px;
+}
+
+body, nav, header, footer, article, ul, ol, h1, h2, h3, p, img, picture, form, input, legend{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+}
+
+a:link { 
+    text-decoration: none; /* removes text decoration for hyperinks */
+}
+
+/* END OF RESET STYLES */
+
+
+
+/* BODY DEFAULTS */
+
+* {
+    box-sizing: border-box; /* includes the padding and border in an element's total width and height */
+}
+
+body {
+    background-color: white;
+}
+
+/* END OF BODY */
+
+
+
+/* KEY SECTIONS */
+
+#header_settings {
+    padding: 0px;
+    border: 1px none red; /* SCAFFOLD LAYOUT GUIDE DEACTIVED */
+    height: auto;
+}
+
+.content_settings {
+    padding: 0px;
+    border: 1px none blue; /* SCAFFOLD LAYOUT GUIDE DEACTIVED */
+    padding: 15px;
+}
+
+#footer_settings {
+    padding: 15px;
+    border: 1px none green; /* SCAFFOLD LAYOUT GUIDE DEACTIVED */
+    text-align: center;
+}
+
+/* END OF KEY SECTIONS */
+
+
+/* IMAGE SCALING CONTROL */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+picture{
+    max-width: 100%;
+    height: auto;
+}
+
+/* END OF SCALING CONTROL */
+
+
+
+/* HEADER AREA */
+
+/* Key header items */
+#logo {
+    min-height: 65px;
+}
+
+.navbar0 {
+    border: 1px none red; /* SCAFFOLD LAYOUT GUIDE DEACTIVED */
+    height: 64px;
+}
+
+#search_form {
+    min-height: 65px;
+    position: relative;
+}
+
+/* End of key header items */
+
+/* logo image scaling control */
+#logo img {
+    max-width: 200px;
+    height: auto;
+}
+#logo picture {
+    max-width: 200px;
+    height: auto;
+}
+
+@media only screen and (min-width: 320px) {
+    #logo img {
+        max-width: 220px;
+    }
+    #logo picture {
+        max-width: 220px;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    #logo img {
+        max-width: 320px;
+    }
+    #logo picture {
+        max-width: 320px;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    #logo img {
+        max-width: 100%;
+    }
+    #logo picture {
+        max-width: 100%;
+    }
+}
+
+/* End of logo image scaling control */
+
+
+
+
+
+/* END OF HEADER AREA */
+
+
+
+/* PAGE TITLE CONTROL */
+#page_title {
+    border-top: solid 1px black;    
+    border-bottom: solid 1px black;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    padding:0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1200px) {
+    #page_title {
+        margin-top: 1em;
+    }
+}
+
+#page_title > h1 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+    margin: 0px;
+}
+
+/* END OF PAGE TITLE CONTROL */
+
+
+/* SECTION TITLE / BREAK CONTROL */
+
+#section_title_01 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    padding:1em 0em 1em 0em;
+    text-align: left;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#section_title_01 > h2 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+    margin: 0em 0em 0em 0.4em;
+    text-align: left;
+}
+
+#section_title_02 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    padding:1em 0em 1em 0em;
+    text-align: left;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#section_title_02 > h2 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+    margin: 0em 0em 0em 0.4em;
+    text-align: left;
+}
+
+#section_title_03 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    padding:1em 0em 1em 0em;
+    text-align: left;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#section_title_03 > h2 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+    margin: 0em 0em 0em 0.4em;
+    text-align: left;
+}
+
+#section_title_04 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    padding:1em 0em 1em 0em;
+    text-align: left;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#section_title_04 > h2 {
+    font-family: "Times New Roman", Times, seriff;
+    font-style: italic;
+    margin: 0em 0em 0em 0.4em;
+    text-align: left;
+}
+
+/* END OF SECTION TITLE / BREAK CONTROL */
+
+
+/* Color Palette */
+
+.colorTest001 { /* for color scheme reference only */
+    color: white;
+}
+
+.colorTest002 { /* for color scheme reference only */
+    color: black;
+}
+
+.colorTest003 { /* for color scheme reference only */
+    color: #f3b562;
+}
+
+.colorTest004 { /* for color scheme reference only */
+    color: lightslategray;
+}
+
+.colorTest005 { /* for color scheme reference only */
+    color: lightgray;
+}
+
+.colorTest006 { /* for color scheme reference only */
+    color: rgb(240, 240, 240);
+}

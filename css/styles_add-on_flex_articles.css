@@ -1,0 +1,76 @@
+/* Original reference code : https://codepen.io/rachelandrew/pen/YqqdXL?editors=1100 */
+/* Reference site: https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/ */
+
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards li {
+    border: 1px none black; /* SCAFFOLDING DEACTIVATED */
+    background-color: rgb(240, 240, 240);
+    color: black;
+    flex: 1 1;
+    min-width: 30%;
+    text-align: justify;
+  }
+  
+  .cards h3 {
+    font-family: "Times New Roman", Times, seriff;
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 10px 10px 0px 10px;
+  }
+  
+  .cards p {
+    padding: 10px;
+  }
+  
+.cards picture {
+    width: 100%;
+    height: auto;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+}
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .flex li {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+
+.cards h3 a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.cards h3 a:visited {
+    color: black;
+}
+
+.cards h3 a:hover {
+  color: lightslategray;
+}
+
+.cards p a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.cards p a:visited {
+  color: black;
+}
+
+.cards p a:hover {
+  color: lightslategray;
+}

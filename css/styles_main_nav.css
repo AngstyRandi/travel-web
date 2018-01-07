@@ -1,0 +1,102 @@
+/* Navigation Menu Bar Control */
+
+/* orignal code from: https://codepen.io/jo_Geek/pen/xgbaEr?editors=1100 */
+
+.navbar0 {
+  text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar0 {
+      text-align: right;
+  }
+}
+
+
+.nav-links0 {
+  text-align: right;
+}
+
+.navbar0 > .nav-links0 > a { /* styling for menu links (default) */
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+
+  text-decoration: none;
+  color: black;
+}
+  
+.navbar0 > .nav-links0 > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+  
+.navbar0 > #nav-check0 { /* hides display of nav icon for desktop view */
+  display: none;
+}
+
+@media (max-width:1200px) { /* mobile view with hamburger menu icon */
+  .nav-links0 {
+    text-align: left;
+  }
+}
+@media (max-width:600px) { /* mobile view with hamburger menu icon */
+  .nav0 { /* hides display of nav icon for desktop view */
+    height: auto;
+    border: none;
+  }
+  
+  .navbar0 { /* hides display of nav icon for desktop view */
+    height: auto;
+    border: none;
+  }
+  
+  .nav-btn0 {
+        background-color: white;
+        border: 1px solid black;
+    }
+    .navbar0 > .nav-btn0 { /* fixes position of nav bar to always remain on top right hand corner of the screen */
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .navbar0 > .nav-btn0 > label { /* controls styling of hamburger menu icon */
+      display: inline-block;
+      width: 50px;
+      height: 40px;
+      padding: 13px;
+    }
+    .navbar0 > .nav-btn0 > label:hover {
+      background-color: white; /* set to white to mask the white color indicators of the image carousel which are also white */
+    }
+    .navbar0 > .nav-btn0 > label > span { /* creates hamburger lines for menu icon */
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black;
+    }
+    .navbar0 > .nav-links0 { /* styling for dropdrop menu when hamburger menu icon expands */
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 55px;
+      left: 0px;
+      z-index: 1; /* ensures that the dropdown menu is above existing content boxes; note the image indicator for the image carousel is stacked above this for unknown reasons */
+    }
+    .navbar0 > .nav-links0 > a { /* styling for menu links */
+      display: block;
+      width: 100%;
+      box-sizing: border-box; /* includes the padding and border in an element's total width and height */      
+    }
+    .navbar0 > #nav-check0:not(:checked) + .nav-links0 { /* expands or collapses menu on click */
+      height: 0px;
+    }
+    .navbar0   > #nav-check0:checked + .nav-links0 { /* controls height of menu drop down */
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
