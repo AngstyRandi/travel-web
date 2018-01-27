@@ -96,51 +96,51 @@
                             
                             <div class="item active"> <!-- container for first image -->
                                 <a href="tour_post_001.html" target="_blank">
-                                    <img src="../resources/images/pic-01-l.jpg" alt="Scarecrow" style="max-width:100%;">
+                                    <img src="../resources/images/pic-15-l.jpg" alt="Sakura" style="max-width:100%;">
                                 </a>
                                 <div class="carousel-caption">
-                                    <h3>Scarecrow</h3>
-                                    <p>Happy Halloween!</p>
+                                    <h3>Sakura</h3>
+                                    <p>Blossom Bliss at the Gardens By The Bay</p>
                                 </div>
                             </div>
                     
                             <div class="item"> <!-- container for each image -->
                                 <a href="tour_post_001.html" target="_blank">
-                                    <img src="../resources/images/pic-02-l.jpg" alt="Super Trees" style="max-width:100%;">
+                                    <img src="../resources/images/pic-16-l.jpg" alt="Tanjong Pagar Railway Station" style="max-width:100%;">
                                 </a>
                                 <div class="carousel-caption">
-                                    <h3>Super Trees</h3>
-                                    <p>Super Trees Lightshow at the Gardens By The Bay</p>
+                                    <h3>Tanjong Pagar</h3>
+                                    <p>Tanjong Pagar Railway Station</p>
                                 </div>
                             </div>
                             
                             <div class="item"> <!-- container for each image -->
                                 <a href="tour_post_001.html" target="_blank">
-                                    <img src="../resources/images/pic-03-l.jpg" alt="Annapurna" style="max-width:100%;">
+                                    <img src="../resources/images/pic-14-l.jpg" alt="Sperm Whale" style="max-width:100%;">
                                 </a>
                                 <div class="carousel-caption">
-                                    <h3>Annapurna</h3>
-                                    <p>Panorama from Poon Hill</p>
+                                    <h3>Sperm Whale</h3>
+                                    <p>Specimen at the LKC Natural History Museum</p>
                                 </div>
                             </div>
     
                             <div class="item"> <!-- container for each image -->
                                 <a href="tour_post_001.html" target="_blank">
-                                    <img src="../resources/images/pic-04-l.jpg" alt="Shitiping" style="max-width:100%;">
+                                    <img src="../resources/images/pic-12-l.jpg" alt="Marina Bay" style="max-width:100%;">
                                 </a>
                                 <div class="carousel-caption">
-                                    <h3>Shitiping</h3>
-                                    <p>Wild coasts of Hualien</p>
+                                    <h3>Marina Bay</h3>
+                                    <p>National Celebrations at Marina Bay</p>
                                 </div>
                             </div>
     
                             <div class="item"> <!-- container for each image -->
                                 <a href="tour_post_001.html" target="_blank">
-                                    <img src="../resources/images/pic-05-l.jpg" alt="Alishan" style="max-width:100%;">
+                                    <img src="../resources/images/pic-17-l.jpg" alt="Kampung Glam" style="max-width:100%;">
                                 </a>
                                 <div class="carousel-caption">
-                                    <h3>Alishan</h3>
-                                    <p>Forests of Alishan</p>
+                                    <h3>Kampung Glam</h3>
+                                    <p>Malay District</p>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
             <article id="article_container"> <!-- Article Section -->
                 <h3>Overview</h3>
                 <p>
-                    <span style="float: left">Cost: SGD 500 per head</span><span style="float: right"><a href="https://www.facebook.com/" target="_blank">Download Itinerary</a></span>
+                    <span style="float: left">Cost: SGD 500 per head</span><span id="span_download_link"><a href="https://www.facebook.com/" target="_blank">Download Itinerary</a></span>
                     <br>
                 </p>
                 <p>Trip Dates: 1 Jan 2018 to 3 Jan 2018 | 1 Feb 2018 to 3 Feb 2018 | 1 Mar 2018 to 3 Mar 2018</p>
@@ -176,10 +176,10 @@
                 <p>
                     <br>
                     <picture>
-                        <source srcset="../resources/images/pic-01-s.jpg" media="(max-width:280px)">
-                        <source srcset="../resources/images/pic-01-m.jpg" media="(max-width:650px)">
-                        <source srcset="../resources/images/pic-01-l.jpg" media="(min-width:651px)">
-                        <img src="../resources/images/pic-01-m.jpg" alt="Scarecrow"> 
+                        <source srcset="../resources/images/pic-13-s.jpg" media="(max-width:280px)">
+                        <source srcset="../resources/images/pic-13-m.jpg" media="(max-width:650px)">
+                        <source srcset="../resources/images/pic-13-l.jpg" media="(min-width:651px)">
+                        <img src="../resources/images/pic-13-m.jpg" alt="Scarecrow"> 
                     </picture>
                 </p>
                 <p>
@@ -232,20 +232,22 @@
         </div>
 
         <div class="col-12" class="content_settings">
-            <form  style="background-color: #8cbeb2"> <!-- contact us form control -->
+            <form> <!-- contact us form control -->
                 <div class="form_container">
                     <h3>Contact Us</h3>
                     <fieldset class="Contact_us-Trip_booking">
                         <label for "title">Title / Trip</label>
-                        <input type="text" name="title" id="titleInput">
+                        <input type="text" name="title" id="titleInput" placeholder="Tour Booking">
+                        <label for ="date">Date</label>
+                        <input type="date" id="dateInput" name="date" id="date" placeholder="dd/mm/yyyy"> 
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="nameInput">
+                        <input type="text" name="name" id="nameInput" placeholder="John Doe">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="emailInput">
+                        <input type="email" name="email" id="emailInput" placeholder="JohnDoe@outlook.com">
                         <label for="contact">Contact No</label>
-                        <input type="number" name="contact" id="nameInput">
+                        <input type="number" name="contact" id="nameInput" placeholder="+65 1234 5678">
                         <label for="travellerNum">No. of Travellers</label>
-                        <input type="number" name="travellerNum" id="travellerNumInput">
+                        <input type="number" name="travellerNum" id="travellerNumInput" placeholder="1">
                         <label for="mail_content">Content</label>
                         <textarea name="mail_content" id="contentInput" rows="5" cols="30"></textarea>
                         <input type="submit" class="send_mail" value="Send">
@@ -256,7 +258,7 @@
         </div>
 
         <footer class="col-12" id="footer_settings">
-            <p>All Rights Reserve 2017. Travel Planet Pte Ltd.</p>
+            <p>All Rights Reserve 2017. Website remodel demo of Planet Travel Pte Ltd by Randi Ang.</p>
         </footer>
     </div>
 </body>
