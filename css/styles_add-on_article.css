@@ -34,3 +34,24 @@
     height: auto;
     text-align: center;
 }
+
+#span_download_link {
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    #article_container ol, ul {
+        font-size: 1.2em;
+    }
+    #article_container caption {
+        font-size: 1.2em;
+    }
+    #article_container p {
+        font-size: 1.2em;
+    }
+    #span_download_link {
+        float: left;
+        width:100%;
+
+    }
+}

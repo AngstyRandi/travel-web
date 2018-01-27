@@ -24,7 +24,15 @@
   text-decoration: none;
   color: black;
 }
-  
+
+@media (max-width:600px) { 
+  .navbar0 > .nav-links0 > a {
+    font-size: 1.2em;
+  }
+}
+
+
+
 .navbar0 > .nav-links0 > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }

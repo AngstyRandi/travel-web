@@ -19,9 +19,15 @@
 }
 
 
+
+
+
 /* Form Control Section */
 
-
+.form_container {
+    padding-top: 0.25em;
+    background-color: lightslategray;
+}
 
 
 .form_container h3 {
@@ -36,6 +42,13 @@
     padding: 0.25em 5% 1em 5%;
 }
 
+@media only screen and (max-width: 600px) {
+    .form_container p {
+    font-size: 1.2em;
+    }
+
+}
+
 .form_container label {
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -48,7 +61,7 @@
     flex-wrap: wrap;
 }
 
-#titleInput, #nameInput, #emailInput, #nameInput, #travellerNumInput {
+#titleInput, #nameInput, #emailInput, #nameInput, #travellerNumInput, #addressInput, #dateInput {
     flex: 1;
     min-width: 90%; 
     min-height: auto;
