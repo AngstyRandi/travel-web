@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <!-- Bootstrap Framework from https://getbootstrap.com/docs/3.3/getting-started/ -->
+    <!-- THE SEQUENCE IS IMPORTANT BUT I DON'T KNOW WHY -->
+
+    <!-- 1. Bootstrap CSS: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 2. Font library from http://fontawesome.io/get-started/ -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 3. Custom CSS:  Optional theme  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  
+
+    <!-- 4. JQuery: minified Jquery library from https://code.jquery.com/ -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <!-- 5. Bootstrap JS: Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- End of Bootstrap Framework -->
+
+    <style>
+    .custom-background  { /*-- custom-background creates a randomly generated custom background */
+        background-image: url("http://lorempixel.com/400/300");
+        background-size: cover;
+        color: white;
+    }
+    
+    .custom-container-border {
+        margin: 1em;
+        padding: 1em;
+        border-radius: 20px;
+        text-align: center; /* sets icons to center */
+        height: 100%;
+    }
+    
+    .custom-padding {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container-fluid"> <!-- Content wrapper -->
+        <div class="jumbotron custom-background"> <!-- .jumbotron and .custom-background is found within the bootstrap css file -->
+            <!-- .jumbotron creates a large box container -->
+            <!-- .custom-background creates a randomly generated custom background; this is not found in bootstrap -->
+            <div class="container">
+                <h1>I do everything!</h1>
+                <h3>Take photographs, bake, swim, code.</h3>
+                <a class="btn btn-primary btn-lg">Learn more</a>
+                <!-- .btn is for specifying a button -->
+                <!-- .btn-primary specifies the style of bootstrap button -->
+                <!-- .btn-lg specifies the size of the button (large) -->
+            </div>
+        </div>
+
+        <div class="row"> <!-- activates grid based layout -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello1</div> <!-- linked to hidden media queries -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello2</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello3</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello4</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello5</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello6</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello7</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="text-align: center">Hello8</div>
+        </div>
+
+        <div class="jumbotron"> <!-- .jumbotron and .custom-background is found within the bootstrap css file -->
+            <!-- .jumbotron creates a large box container -->
+            <!-- .custom-background creates a randomly generated custom background; this is not found in bootstrap -->
+            <div class="container">
+                <h1>I do everything!</h1>
+                <h3>Take photographs, bake, swim, code.</h3>
+            </div>
+        </div>
+
+        <div class="row"> <!-- Icons -->
+            <!-- Add a font awesome icon -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="custom-container-border">
+                    <i class="fa fa-camera-retro fa-5x"></i> <!-- calls out camera icon from awesome fonts css (http://fontawesome.io/icons/) -->
+                    <!-- .fa will call the font awesome class -->
+                    <h1>Photography</h1>
+                </div>
+            </div>
+
+            <!-- Add a font awesome icon -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="custom-container-border">
+                    <i class="fa fa-birthday-cake fa-5x"></i> <!-- calls out camera icon from awesome fonts css (http://fontawesome.io/icons/) -->
+                    <!-- .fa will call the font awesome class -->
+                    <h1>Baking</h1>
+                </div>
+            </div>
+
+            <!-- Add a font awesome icon -->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="custom-container-border">
+                    <i class="fa fa-code fa-5x"></i> <!-- calls out camera icon from awesome fonts css (http://fontawesome.io/icons/) -->
+                    <!-- .fa will call the font awesome class -->
+                    <h1>Coding</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-primary"> <!-- Images -->
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <!-- Picture element is not fully supported -->
+                <!--<picture class="img-responsive center-block" alt="">
+                    <source srcset="resources/images/pic-01-s.jpg" media="(max-width:280px)">
+                    <source srcset="resources/images/pic-02-m.jpg" media="(max-width:450px)">
+                    <source srcset="resources/images/pic-03-l.jpg" media="(min-width:651px)"> -->
+                    <img class="img-responsive center-block" src="resources/images/pic-01-l.jpg" alt="Scarecrow"> 
+              <!--  </picture> -->
+
+                <!-- .bg-primary sets background to primary (blue) colour -->
+                <!-- .hidden-xs hides the image at xs screen size -->
+                <!-- .img-responsive fits the image to the best resolution possible in a certain space -->
+                <!-- .center-block aligns the image at the center of the column -->
+            </div>
+        </div>
+
+        <div class="row"> <!-- Tables -->
+            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3"></div> <!-- Spacer -->
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1 class="text-center">Pricing</h1>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Services</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Learn photography</td>
+                            <td>$200</td>
+                        </tr>
+                        <tr>
+                            <td>Learn baking</td>
+                            <td>$50 per session</td>
+                        </tr>
+                        <tr>
+                            <td>Code webpages</td>
+                            <td>$500 for 3 pages</td>
+                        </tr>
+                    <tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row"> <!-- Forms -->
+            <form action="thankyou.html" method="post">
+            
+                <!-- first column of form -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 custom-padding">
+                    <!--name-->
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <!--email-->
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" class="form-control" name="email" id="email"
+                        placeholder="abc@gmail.com">
+                    </div>
+                    <!--telephone-->
+                    <div class="form-group">
+                        <label for="phone">Contact Number: </label>
+                        <input type="tel" class="form-control" name="phone" id="phone">
+                    </div>
+                </div>
+
+                <!-- second column of form -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 custom-padding">
+                    <!--newsletter radio options-->
+                    <p><b>Newsletter updates about things I can do for you</b></p>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label for="weekly">
+                                <input type="radio" name="newsletter" id="weekly" value="weekly">
+                                I want weekly updates
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="important">
+                                <input type="radio" name="newsletter" id="important" value="important">
+                                Only important updates
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="never">
+                                <input type="radio" name="newsletter" id="never" value="never">
+                                Never send me newletters
+                            </label>
+                        </div>
+
+                        <!-- Areas of interests checkbox options -->
+                        <div class="form-group">
+                            <p><b>What are your areas of interest?</b></p>
+                            <div class="checkbox">
+                                <label for="photography">
+                                    <input type="checkbox" name="interest" id="photography" value="photography">
+                                    Photography
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="baking">
+                                    <input type="checkbox" name="interest" id="baking" value="baking">
+                                    Baking
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="coding">
+                                    <input type="checkbox" name="interest" id="coding" value="coding">
+                                    Coding
+                                </label>
+                            </div>
+                        </div>
+
+                    <!-- Contact Method Select Option -->
+                    <div class="form-group">
+                        <label for="sel1">How do you wish to be contacted?</label>
+                        <select class="form-control" id="sel1">
+                        <option>Mail</option>
+                        <option>Email</option>
+                        <option>Telephone</option>
+                        <option>None</option>
+                        </select>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary">Sign
+                        Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="row"> <!-- Video iframe -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="embed-responsive embed-responsive-16by9 center-block">
+                    <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/_tWSAQNSPqc" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row custom-padding"> <!-- Quotations -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <img src="http://lorempixel.com/300/300/people"
+                class="img-circle center-block" alt="">
+
+                <!-- .img-circle creates a round image -->
+                <!-- .center-block centers image in the column -->
+                <!-- <blockquote> makes text in a fixed-width column -->
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                <blockquote>
+                    <p>The photography classes are practical and fun!</p>
+                    <p>Highly recommended. Thumbs up!</p>
+                </blockquote>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
