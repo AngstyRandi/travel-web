@@ -52,6 +52,9 @@
     #span_download_link {
         float: left;
         width:100%;
-
+    }
+    .tripdates {
+        float: left;
+        width: 100%;
     }
 }
