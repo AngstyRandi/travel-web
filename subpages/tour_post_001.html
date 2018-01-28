@@ -167,10 +167,10 @@
             <article id="article_container"> <!-- Article Section -->
                 <h3>Overview</h3>
                 <p>
-                    <span style="float: left">Cost: SGD 500 per head</span><span id="span_download_link"><a href="https://www.facebook.com/" target="_blank">Download Itinerary</a></span>
+                    <span style="float: left">Cost: SGD 500 per head</span><span id="span_download_link"><a href="https://www.facebook.com/" target="_blank">Download Itinerary</a> | <a href="#booknow">Book Now</a></span>
                     <br>
                 </p>
-                <p>Trip Dates: 1 Jan 2018 to 3 Jan 2018 | 1 Feb 2018 to 3 Feb 2018 | 1 Mar 2018 to 3 Mar 2018</p>
+                <p>Trip Dates: <span class="tripdates">1 Jan 2018 to 3 Jan 2018 | </span><span class="tripdates">1 Feb 2018 to 3 Feb 2018 | </span><span class="tripdates">1 Mar 2018 to 3 Mar 2018</span></p>
                 <p>Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae. Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc.  Vestibulum non nibh risus, a scelerisque purus. Ut vel arcu ac tortor adipiscing hendrerit vel sed massa. Fusce sem libero, lacinia vulputate interdum non, porttitor non quam. Aliquam sed felis ligula. Duis non nulla magna. 
                 </p>
                 <p>
@@ -226,8 +226,9 @@
 
             </article>
         </div>
-        
+            
         <div id="section_title_02" class="col-12">
+            <a name="booknow"></a>
             <h2>Booking Information</h2>
         </div>
 
@@ -248,6 +249,66 @@
                         <input type="number" name="contact" id="nameInput" placeholder="+65 1234 5678">
                         <label for="travellerNum">No. of Travellers</label>
                         <input type="number" name="travellerNum" id="travellerNumInput" placeholder="1">
+                        <label for="mail_content">Content</label>
+                        <textarea name="mail_content" id="contentInput" rows="5" cols="30"></textarea>
+                        <input type="submit" class="send_mail" value="Send">
+                    </fieldset>
+                    <p><a href="https://www.facebook.com/" target="_blank">Privacy Info</a> | <a href="https://www.facebook.com/" target="_blank">Terms and Conditions</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="section_title_04" class="col-12">
+            <a name="booknow"></a>
+            <h2>Customer Reviews</h2>
+        </div>
+
+        
+
+        <div class="col-12" class="content_settings">
+            <ul class="flex cards"> <!-- container to create flex articles system -->
+                <li>
+                    <h3>Review 1</h3>
+                    <p>By John Doe<br>
+                    Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </p>
+                </li>
+                <li>
+                    <h3>Review 2</h3>
+                    <p>By John Doe<br>
+                    Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </p>
+                </li>
+                <li>
+                    <h3>Review 3</h3>
+                    <p>By John Doe<br>
+                    Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </p>
+                </li>
+                <li>
+                    <h3>Review 4</h3>
+                    <p>By John Doe<br>
+                    Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </p>
+                </li>
+                <li>
+                    <h3>Review 5</h3>
+                    <p>By John Doe<br>
+                    Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
+                    </p>
+                </li>        
+            </ul>   
+        </div>
+
+        <div class="col-12" class="content_settings">
+            <form> <!-- contact us form control -->
+                <div class="form_container">
+                    <h3>Drop Us A Review</h3>
+                    <fieldset class="Contact_us-Trip_booking">
+                        <label for "title">Title</label>
+                        <input type="text" name="title" id="titleInput" placeholder="Tour Trip">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="nameInput" placeholder="John Doe">
                         <label for="mail_content">Content</label>
                         <textarea name="mail_content" id="contentInput" rows="5" cols="30"></textarea>
                         <input type="submit" class="send_mail" value="Send">
